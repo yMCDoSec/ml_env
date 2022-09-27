@@ -1,0 +1,12 @@
+version: "3"
+services:
+  jupyter:
+    build: .
+    volumes:
+      - ../work_dir:/tmp/working
+    working_dir: /tmp/working
+    ports:
+      - "8080:8080"
+    hostname: localhost
+
+# https://www.kaggle.com/competitions/shopee-product-matching/discussion/230242
